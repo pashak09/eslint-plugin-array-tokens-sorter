@@ -13,10 +13,10 @@ class C {}
 
 const SCOPE: unknown[] = [];
 
-// enable-alphabetical-order-array
+// eslint: enable-alphabetical-order-array
 export default [...SCOPE, A, B, C];
 
-export default [...SCOPE, A, B, C]; // enable-alphabetical-order-array - a second sample of usage
+export default [...SCOPE, A, B, C]; // eslint: enable-alphabetical-order-array - a second sample of usage
 ```
 
 After fixing the code
@@ -28,10 +28,10 @@ class C {}
 
 const SCOPE: unknown[] = [];
 
-// enable-alphabetical-order-array
+// eslint: enable-alphabetical-order-array
 export default [...SCOPE, A, B, C];
 
-export default [...SCOPE, A, B, C]; // enable-alphabetical-order-array - a second sample of usage
+export default [...SCOPE, A, B, C]; // eslint: enable-alphabetical-order-array - a second sample of usage
 ```
 
 ## Installation
