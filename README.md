@@ -13,7 +13,10 @@ class C {}
 
 const SCOPE: unknown[] = [];
 
-export default [B, ...SCOPE, A, C];
+// enable-alphabetical-order-array
+export default [...SCOPE, A, B, C];
+
+export default [...SCOPE, A, B, C]; // enable-alphabetical-order-array - a second sample of usage
 ```
 
 After fixing the code
@@ -25,7 +28,10 @@ class C {}
 
 const SCOPE: unknown[] = [];
 
+// enable-alphabetical-order-array
 export default [...SCOPE, A, B, C];
+
+export default [...SCOPE, A, B, C]; // enable-alphabetical-order-array - a second sample of usage
 ```
 
 ## Installation
@@ -44,7 +50,7 @@ JSON ESLint config example:
 {
   "plugins": ["array-tokens-sorter"],
   "rules": {
-    "my-array-tokens-sorter/array": ["error", { "spreadVariablesFirst": true }]
+    "array-tokens-sorter/array": ["error", { "spreadVariablesFirst": true }]
   }
 }
 ```
@@ -63,7 +69,7 @@ If you want to indicate the files for research you can use:
         "array-tokens-sorter"
       ],
       "rules": {
-        "my-array-tokens-sorter/array": [
+        "array-tokens-sorter/array": [
           "error",
           {
             "spreadVariablesFirst": true
