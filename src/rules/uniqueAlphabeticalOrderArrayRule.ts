@@ -27,7 +27,7 @@ export function uniqueAlphabeticalOrderArrayCheckerFixer(
     return;
   }
 
-  arrayFixer(uniqueItems, 'Array elements are not uniqueness.', node, context);
+  arrayFixer(uniqueItems, 'Array elements are not unique.', node, context);
 }
 
 export function uniqueAlphabeticalOrderArrayRule(
