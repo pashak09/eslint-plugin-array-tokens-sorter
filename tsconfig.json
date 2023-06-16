@@ -22,5 +22,6 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "moduleResolution": "node",
-  },
+    "tsBuildInfoFile": ".tsbuildinfo"
+  }
 }

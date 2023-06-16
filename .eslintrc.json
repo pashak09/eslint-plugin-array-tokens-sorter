@@ -84,8 +84,7 @@
     "curly": "error",
     "no-unreachable": "error",
     "no-console": "error",
-    "@typescript-eslint/no-unnecessary-condition": ["warn"],
-    "import/no-relative-parent-imports": "error"
+    "@typescript-eslint/no-unnecessary-condition": ["warn"]
   },
   "parserOptions": {
     "ecmaVersion": 2021,

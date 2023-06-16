@@ -1,4 +1,4 @@
-# eslint-plugin-github
+# eslint-plugin-array-tokens-sorter
 
 ## Purpose 
 
@@ -17,6 +17,9 @@ const SCOPE: unknown[] = [];
 export default [...SCOPE, A, B, C];
 
 export default [...SCOPE, A, B, C]; // eslint: enable-alphabetical-order-array - a second sample of usage
+
+// eslint: enable-unique-alphabetical-order-array
+export default [...SCOPE, A, A, B, C];
 ```
 
 After fixing the code
@@ -32,6 +35,9 @@ const SCOPE: unknown[] = [];
 export default [...SCOPE, A, B, C];
 
 export default [...SCOPE, A, B, C]; // eslint: enable-alphabetical-order-array - a second sample of usage
+
+// eslint: enable-unique-alphabetical-order-array
+export default [...SCOPE, A, B, C];
 ```
 
 ## Installation
@@ -52,31 +58,5 @@ JSON ESLint config example:
   "rules": {
     "array-tokens-sorter/array": ["error", { "spreadVariablesFirst": true }]
   }
-}
-```
-
-If you want to indicate the files for research you can use:
-
-```json
-{
-  "overrides": [
-    {
-      "files": [
-        "src/**/*/index.ts",
-        "src/entities.ts"
-      ],
-      "plugins": [
-        "array-tokens-sorter"
-      ],
-      "rules": {
-        "array-tokens-sorter/array": [
-          "error",
-          {
-            "spreadVariablesFirst": true
-          }
-        ]
-      }
-    }
-  ]
 }
 ```

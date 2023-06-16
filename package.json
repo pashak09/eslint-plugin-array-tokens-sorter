@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-array-tokens-sorter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ESLint rule to enforce alphabetical sorting of array elements",
   "keywords": [
     "ESLint",
@@ -27,7 +27,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.7",
     "rimraf": "^4.4.1",
