@@ -14,23 +14,16 @@ export function uniqueAlphabeticalOrderArrayCheckerFixer(
   context: Rule.RuleContext,
 ): void {
   const uniqueItemSet = new Set<string>();
-  const uniqueItems: NodeItem[] = new Array(sortedElements.length);
-  let cursor = 0;
-  let hasUniqueItems = true;
+  const uniqueItems: NodeItem[] = [];
 
   for (const element of sortedElements) {
     if (uniqueItemSet.has(element.value) === false) {
-      uniqueItems[cursor] = element;
-      cursor++;
+      uniqueItems.push(element);
       uniqueItemSet.add(element.value);
-
-      continue;
     }
-
-    hasUniqueItems = false;
   }
 
-  if (hasUniqueItems !== false) {
+  if (uniqueItems.length === sortedElements.length) {
     return;
   }
 

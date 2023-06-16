@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-array-tokens-sorter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "ESLint rule to enforce alphabetical sorting of array elements",
   "keywords": [
     "ESLint",
